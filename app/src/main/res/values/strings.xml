@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KaushalyaKarnataka</string>
+    <string name="hire_me">Hire Me!</string>
+    <string name="thumbs_up">👍 Thumbs Up</string>
+    <string name="thumbs_count_text">👍 0 people thumbed up this worker</string>
+    <string name="write_a_review">Write a Review</string>
+    <string name="about">About</string>
+    <string name="services">Services</string>
+    <string name="reviews">Reviews</string>
+    <string name="write_a_review_hint">Write a review...</string>
+    <string name="submit_review">Submit Review</string>
+</resources>

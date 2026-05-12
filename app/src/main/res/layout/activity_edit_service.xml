@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Service"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1D9E75"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long press a service card to edit it"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etEditServiceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price (₹)"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etEditPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Type"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgEditPriceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbEditFixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed Price"
+                android:textColor="#333333"
+                android:layout_marginEnd="24dp"/>
+
+            <RadioButton
+                android:id="@+id/rbEditStartingAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting At"
+                android:textColor="#333333"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnUpdateService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Service"
+            android:backgroundTint="#1D9E75"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnDeleteService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Service"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

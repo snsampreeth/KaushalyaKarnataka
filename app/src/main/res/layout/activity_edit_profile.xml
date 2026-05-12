@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1D9E75"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area / Location"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etEditArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Koramangala, Bengaluru"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
+            android:inputType="textPostalAddress"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etEditBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell customers about yourself..."
+            android:padding="14dp"
+            android:minLines="4"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/input_background"
+            android:importantForAutofill="no"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:backgroundTint="#1D9E75"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

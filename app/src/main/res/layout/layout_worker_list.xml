@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1D9E75"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Workers"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by name..."
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:inputType="text"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All" style="@style/Widget.MaterialComponents.Button.TextButton" android:textColor="#FFFFFF"/>
+                <Button android:id="@+id/btnElectrician" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Electrician" style="@style/Widget.MaterialComponents.Button.TextButton" android:textColor="#FFFFFF"/>
+                <Button android:id="@+id/btnPlumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Plumber" style="@style/Widget.MaterialComponents.Button.TextButton" android:textColor="#FFFFFF"/>
+                <Button android:id="@+id/btnCarpenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Carpenter" style="@style/Widget.MaterialComponents.Button.TextButton" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWorkers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+</LinearLayout>
